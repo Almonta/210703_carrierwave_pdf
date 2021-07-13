@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document:</strong>
+  <%#= @feed.document.url %>
+  <%#= image_tag @feed.image.url %>
+  <%#= image_tag @feed.document.url %>
+  
+  <object data="<%= @feed.document.url %>" type="application/pdf"  width="1200" height="800"></object>
+</p>
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %>
